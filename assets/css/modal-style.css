@@ -1,0 +1,76 @@
+._modal {
+    background-image: linear-gradient(rgb(255, 94, 0), rgb(255, 0, 34));
+    height: 266px;
+    width: 449px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+
+
+
+._modal-top {
+    transform: translateY(100px);
+}
+
+
+._modal-y {
+    transform: translateY(-400px);
+}
+
+._modal button {
+    margin-top: 10rem;
+}
+
+#btn button {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+/* .hover_text {
+    line-height: 1.2em;
+    color: #0000;
+    text-shadow:
+        0 0 #000,
+        0 1.2em #048bb8;
+    overflow: hidden;
+    transition: .3s;
+}
+
+
+
+.hover_text:hover {
+    text-shadow:
+        0 -1.2em #000,
+        0 0 #0484af;
+} */
+
+
+.hover_text {
+    --c: #05141a;
+    /* the color  */
+    --h: 1.2em;
+    /* the height */
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+    line-height: var(--h);
+    background:
+        linear-gradient(var(--c) 0 0) no-repeat calc(200% - var(--_p, 0%)) 100%/200% var(--_p, .08em);
+    color: #0000;
+    overflow: hidden;
+    text-shadow:
+        0 calc(-1*var(--_t, 0em)) var(--c),
+        0 calc(var(--h) - var(--_t, 0em)) #fff;
+    transition: .3s var(--_s, 0s), background-position .3s calc(.3s - var(--_s, 0s));
+}
+
+.hover_text:hover {
+    --_t: var(--h);
+    --_p: 100%;
+    --_s: .3s
+}
